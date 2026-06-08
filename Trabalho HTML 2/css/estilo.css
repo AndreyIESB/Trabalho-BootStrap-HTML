@@ -1,0 +1,125 @@
+/* RESET BÁSICO */
+body {
+  background-color: #0a0a0a;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CORES PRINCIPAIS */
+:root {
+  --cor-principal: #00d4d4;
+  --cor-secundaria: #00a3a3;
+  --cor-branco: #ffffff;
+  --cor-preto: #000000;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #000 !important;
+  border-bottom: 2px solid var(--cor-principal);
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  color: var(--cor-principal) !important;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-link {
+  color: var(--cor-branco) !important;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--cor-principal) !important;
+}
+
+/* BOTÕES (CORRIGIDO PARA btn-danger) */
+.btn-danger {
+  background-color: var(--cor-principal);
+  border: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  background-color: var(--cor-secundaria);
+  color: #000;
+}
+
+/* TITULOS */
+h1, h2, h3, h4 {
+  color: var(--cor-principal);
+  font-weight: bold;
+}
+
+/* SEÇÕES */
+section {
+  padding: 60px 0;
+}
+
+/* CAROUSEL TEXTO */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* CARDS */
+.card {
+  background-color: #111;
+  border: 1px solid var(--cor-principal);
+  color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px var(--cor-principal);
+}
+
+/* ACCORDION */
+.accordion-button {
+  background-color: #111;
+  color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--cor-principal);
+  color: #000;
+}
+
+.accordion-body {
+  background-color: #000;
+  color: #ccc;
+}
+
+/* LINKS */
+a {
+  color: var(--cor-principal);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cor-secundaria);
+}
+
+/* FOOTER */
+footer {
+  background-color: #000;
+  border-top: 2px solid var(--cor-principal);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 20px;
+  }
+
+  .carousel-caption p {
+    font-size: 14px;
+  }
+}
